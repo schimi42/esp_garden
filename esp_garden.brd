@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -1313,6 +1313,22 @@ MELF 0.10 W</description>
 <rectangle x1="0.6858" y1="-0.7112" x2="1.0414" y2="0.7112" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
 </package>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="burr-brown">
@@ -1648,6 +1664,8 @@ design rules under a new name.</description>
 <element name="WEMOS1" library="esp8266modules" package="WEMOS-D1-MINI" value="" x="26" y="81" rot="R180"/>
 <element name="D5" library="diode" package="SMB" value="ES2D" x="20.3" y="91.1" rot="MR0"/>
 <element name="U15" library="JKW_CHIP" package="2_SCREW_PIN" value="V1" x="45" y="88" rot="R90"/>
+<element name="C1" library="rcl" package="C0805" value="" x="22.5" y="74.5" rot="MR270"/>
+<element name="C2" library="rcl" package="C0805" value="" x="27.5" y="74.5" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1663,7 +1681,7 @@ design rules under a new name.</description>
 <contactref element="U11" pad="P$2"/>
 <contactref element="U12" pad="P$1"/>
 <contactref element="U14" pad="P$2"/>
-<polygon width="0.6096" layer="16">
+<polygon width="0.6096" layer="16" isolate="0.254">
 <vertex x="6" y="99.5"/>
 <vertex x="49.5" y="99.5"/>
 <vertex x="49.5" y="0.5"/>
@@ -1674,6 +1692,9 @@ design rules under a new name.</description>
 <vertex x="6" y="76.5"/>
 </polygon>
 <wire x1="5.5" y1="85.5" x2="7.5" y2="85.5" width="1.27" layer="16"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<wire x1="24.9746" y1="75.5254" x2="25" y2="75.5" width="0.6096" layer="16"/>
 </signal>
 <signal name="RELAY_L_3">
 <contactref element="T4" pad="2"/>
@@ -1709,7 +1730,7 @@ design rules under a new name.</description>
 <wire x1="9" y1="94" x2="21" y2="94" width="0.6096" layer="16"/>
 <wire x1="21" y1="94" x2="22.5" y2="92.5" width="0.6096" layer="16"/>
 <wire x1="22.5" y1="92.5" x2="22.5" y2="91.1" width="0.6096" layer="16"/>
-<polygon width="0.6096" layer="16">
+<polygon width="0.6096" layer="16" isolate="0.254">
 <vertex x="0.5" y="99.5"/>
 <vertex x="5" y="99.5"/>
 <vertex x="5" y="75.5"/>
@@ -1725,6 +1746,9 @@ design rules under a new name.</description>
 <vertex x="0.5" y="64.5"/>
 </polygon>
 <wire x1="5.5" y1="90.5" x2="3.5" y2="90.5" width="1.27" layer="16"/>
+<contactref element="C1" pad="1"/>
+<wire x1="22.5" y1="75.45" x2="22.5" y2="77.6618" width="0.6096" layer="16"/>
+<wire x1="22.5" y1="77.6618" x2="22.6886" y2="77.8504" width="0.6096" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="LDO" pad="1"/>
@@ -1741,7 +1765,7 @@ design rules under a new name.</description>
 <wire x1="27.2606" y1="77.8504" x2="28.8504" y2="77.8504" width="0.6096" layer="16"/>
 <wire x1="28.8504" y1="77.8504" x2="29.5" y2="78.5" width="0.6096" layer="16"/>
 <via x="29.5" y="78.5" extent="1-16" drill="0.3048"/>
-<polygon width="0.6096" layer="1">
+<polygon width="0.6096" layer="1" isolate="0.254">
 <vertex x="0.5" y="99.5"/>
 <vertex x="49.5" y="99.5"/>
 <vertex x="49.5" y="0.5"/>
@@ -1751,6 +1775,9 @@ design rules under a new name.</description>
 <vertex x="11" y="76"/>
 <vertex x="0.5" y="76"/>
 </polygon>
+<contactref element="C2" pad="1"/>
+<wire x1="27.5" y1="75.45" x2="27.5" y2="77.611" width="0.6096" layer="16"/>
+<wire x1="27.5" y1="77.611" x2="27.2606" y2="77.8504" width="0.6096" layer="16"/>
 </signal>
 <signal name="RELAY_0">
 <contactref element="T1" pad="1"/>
@@ -1817,7 +1844,7 @@ design rules under a new name.</description>
 <contactref element="RELAY1" pad="SWCOMMON"/>
 <contactref element="RELAY2" pad="SWCOMMON"/>
 <contactref element="RELAY3" pad="SWCOMMON"/>
-<polygon width="0.6096" layer="1">
+<polygon width="0.6096" layer="1" isolate="0.254">
 <vertex x="0.5" y="71"/>
 <vertex x="8.5" y="71"/>
 <vertex x="17.5" y="62.5"/>
@@ -1836,7 +1863,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="P$2"/>
 <contactref element="U3" pad="P$2"/>
 <contactref element="U4" pad="P$2"/>
-<polygon width="0.6096" layer="1">
+<polygon width="0.6096" layer="1" isolate="0.254">
 <vertex x="0.5" y="70"/>
 <vertex x="8" y="70"/>
 <vertex x="16.5" y="62"/>
