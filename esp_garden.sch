@@ -22904,6 +22904,117 @@ ESP8266 module</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diy-modules">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.3.0 (2016-Dec-18)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.3.0" alt="DIYmodules.org"&gt;&lt;/a&gt;&lt;/center&gt;</description>
+<packages>
+<package name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;</description>
+<wire x1="-7.62" y1="2.54" x2="-1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="2.54" x2="1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.524" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="1.016" width="0.127" layer="21"/>
+<wire x1="7.62" y1="1.016" x2="7.62" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-5.334" x2="3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-5.334" x2="1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.334" x2="0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-5.334" x2="-0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-5.334" x2="-1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.334" x2="-3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.334" x2="-7.62" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-5.334" x2="-7.62" y2="1.016" width="0.127" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="0.8"/>
+<text x="0" y="3.81" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<pad name="3" x="1.27" y="0" drill="0.8"/>
+<pad name="4" x="3.81" y="0" drill="0.8"/>
+<wire x1="-7.62" y1="1.016" x2="-7.62" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-5.334" x2="-0.635" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-5.334" x2="-3.175" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-1.905" x2="-1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.905" x2="-1.905" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.334" x2="1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="3.175" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.905" x2="3.175" y2="-5.334" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="1.016" x2="-1.524" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="1.524" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.016" x2="7.62" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.016" x2="1.524" y2="2.54" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;</description>
+<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="DAT" x="-12.7" y="2.54" length="middle"/>
+<pin name="N.C." x="-12.7" y="0" length="middle" direction="pas"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="4.064" x2="5.08" y2="2.286" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.286" x2="5.08" y2="0.254" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0.254" x2="5.08" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.524" x2="5.08" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-3.556" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="4.826" y1="6.096" x2="1.27" y2="6.096" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.096" x2="1.27" y2="4.064" width="0.254" layer="94"/>
+<wire x1="1.27" y1="4.064" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.286" x2="1.27" y2="2.286" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.254" x2="5.08" y2="0.254" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.524" x2="1.27" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.524" x2="1.27" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.556" x2="5.08" y2="-3.556" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEMP-HUM-SENSOR-DHT22">
+<description>&lt;b&gt;DHT22 - digital humidity &amp; temperature sensor&lt;/b&gt;&lt;br /&gt;
+Also known as: &lt;b&gt;AM2302&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;AM2302&lt;/b&gt; datasheet available here:&lt;br&gt;
+&lt;a href="http://akizukidenshi.com/download/ds/aosong/AM2302.pdf"&gt;http://akizukidenshi.com/download/ds/aosong/AM2302.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/dht22+digital+sensor"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=TEMP-HUM-SENSOR-DHT22"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEMP-HUM-SENSOR-DHT22" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEMP-HUM-SENSOR-DHT22">
+<connects>
+<connect gate="G$1" pin="DAT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="N.C." pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22967,6 +23078,17 @@ ESP8266 module</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="IC1" library="burr-brown" deviceset="REG1117" device=""/>
 <part name="U$1" library="JKW_CHIP" deviceset="LOGO_NO_TRASH" device="NO_TRASH"/>
+<part name="U$2" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device=""/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="4.7k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="n.a."/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="n.a."/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="M0805" value="n.a."/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="n.a."/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="n.a."/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22979,7 +23101,7 @@ ESP8266 module</description>
 <instance part="T1" gate="G$1" x="129.54" y="142.24" smashed="yes">
 <attribute name="VALUE" x="135.89" y="142.24" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="132.08" y="132.08"/>
+<instance part="GND8" gate="1" x="132.08" y="129.54"/>
 <instance part="D1" gate="G$1" x="157.48" y="157.48" rot="MR180"/>
 <instance part="U1" gate="G$1" x="200.66" y="149.86" smashed="yes">
 <attribute name="NAME" x="209.042" y="149.352" size="1.778" layer="95" rot="R90"/>
@@ -22994,11 +23116,11 @@ ESP8266 module</description>
 <instance part="U4" gate="G$1" x="200.66" y="81.28" smashed="yes">
 <attribute name="NAME" x="209.042" y="80.772" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="66.04" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.5414" y="92.71" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="64.262" y="97.79" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="60.96" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="59.4614" y="92.71" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="59.182" y="97.79" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND7" gate="1" x="76.2" y="43.18"/>
+<instance part="GND7" gate="1" x="76.2" y="20.32"/>
 <instance part="U2" gate="G$1" x="200.66" y="127" smashed="yes">
 <attribute name="NAME" x="209.042" y="126.492" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -23029,8 +23151,8 @@ ESP8266 module</description>
 </instance>
 <instance part="P+1" gate="1" x="195.58" y="66.04"/>
 <instance part="GND6" gate="1" x="195.58" y="53.34"/>
-<instance part="SUPPLY1" gate="G$1" x="195.58" y="43.18"/>
-<instance part="SUPPLY2" gate="G$1" x="195.58" y="30.48"/>
+<instance part="SUPPLY1" gate="G$1" x="187.96" y="45.72"/>
+<instance part="SUPPLY2" gate="G$1" x="187.96" y="27.94"/>
 <instance part="SUPPLY3" gate="G$1" x="193.04" y="165.1"/>
 <instance part="SUPPLY4" gate="G$1" x="198.12" y="73.66"/>
 <instance part="U7" gate="G$1" x="78.74" y="91.44" smashed="yes" rot="MR180">
@@ -23065,6 +23187,35 @@ ESP8266 module</description>
 <instance part="C2" gate="G$1" x="25.4" y="78.74"/>
 <instance part="IC1" gate="G$1" x="10.16" y="86.36"/>
 <instance part="U$1" gate="G$1" x="-25.4" y="2.54"/>
+<instance part="U$2" gate="G$1" x="91.44" y="30.48"/>
+<instance part="R2" gate="G$1" x="66.04" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.5414" y="72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="64.262" y="77.47" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="121.92" y="134.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="125.73" y="133.1214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="120.65" y="132.842" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R4" gate="G$1" x="109.22" y="147.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.7186" y="151.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="110.998" y="146.05" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R5" gate="G$1" x="109.22" y="132.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="110.7186" y="135.89" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="110.998" y="130.81" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND2" gate="1" x="109.22" y="121.92"/>
+<instance part="+3V3" gate="G$1" x="109.22" y="157.48"/>
+<instance part="R6" gate="G$1" x="177.8" y="40.64" smashed="yes">
+<attribute name="NAME" x="173.99" y="42.1386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="179.07" y="42.418" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="177.8" y="33.02" smashed="yes">
+<attribute name="NAME" x="173.99" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="179.07" y="34.798" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="170.18" y="27.94"/>
+<instance part="+3V5" gate="G$1" x="170.18" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -23073,7 +23224,7 @@ ESP8266 module</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="S"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="132.08" y1="134.62" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="T2" gate="G$1" pin="S"/>
@@ -23120,7 +23271,8 @@ ESP8266 module</description>
 <wire x1="76.2" y1="71.12" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U8" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="60.96" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="27.94" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="86.36" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
@@ -23134,12 +23286,26 @@ ESP8266 module</description>
 <pinref part="U12" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 <junction x="76.2" y="60.96"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="78.74" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<junction x="76.2" y="27.94"/>
 </segment>
 <segment>
 <pinref part="WEMOS1" gate="D1" pin="GND"/>
 <wire x1="45.72" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="132.08" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="172.72" y1="33.02" x2="170.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="33.02" x2="170.18" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="109.22" y1="124.46" x2="109.22" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RELAY_L_3" class="0">
@@ -23213,10 +23379,11 @@ ESP8266 module</description>
 <wire x1="73.66" y1="68.58" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="76.2" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="83.82" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="101.6" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="101.6" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 <junction x="73.66" y="104.14"/>
 <pinref part="U7" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="91.44" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
 <junction x="73.66" y="91.44"/>
 <pinref part="U8" gate="G$1" pin="1"/>
@@ -23227,6 +23394,13 @@ ESP8266 module</description>
 <junction x="73.66" y="76.2"/>
 <pinref part="U11" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
+<wire x1="78.74" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="35.56" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<junction x="73.66" y="68.58"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="81.28" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
+<junction x="66.04" y="104.14"/>
 </segment>
 <segment>
 <pinref part="WEMOS1" gate="D1" pin="3V3"/>
@@ -23243,6 +23417,17 @@ ESP8266 module</description>
 <wire x1="22.86" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 <junction x="25.4" y="86.36"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="172.72" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="40.64" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="109.22" y1="154.94" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RELAY_0" class="0">
 <segment>
@@ -23253,7 +23438,20 @@ ESP8266 module</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="G"/>
 <wire x1="127" y1="139.7" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
-<label x="116.84" y="139.7" size="1.778" layer="95"/>
+<label x="91.44" y="139.7" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="139.7" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="139.7" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="134.62" x2="114.3" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="134.62" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
+<junction x="114.3" y="139.7"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="137.16" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+<junction x="106.68" y="139.7"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="142.24" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
+<junction x="111.76" y="139.7"/>
 </segment>
 </net>
 <net name="RELAY_1" class="0">
@@ -23283,8 +23481,8 @@ ESP8266 module</description>
 <net name="RELAY_3" class="0">
 <segment>
 <pinref part="T4" gate="G$1" pin="G"/>
-<wire x1="127" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
 <label x="116.84" y="71.12" size="1.778" layer="95"/>
+<wire x1="127" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="WEMOS1" gate="D1" pin="D7"/>
@@ -23296,8 +23494,12 @@ ESP8266 module</description>
 <segment>
 <pinref part="U6" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="G$1" pin="+UB"/>
-<wire x1="200.66" y1="38.1" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="38.1" x2="195.58" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="38.1" x2="187.96" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="38.1" x2="187.96" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="40.64" x2="187.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="40.64" x2="187.96" y2="40.64" width="0.1524" layer="91"/>
+<junction x="187.96" y="40.64"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="+UB"/>
@@ -23322,8 +23524,12 @@ ESP8266 module</description>
 <segment>
 <pinref part="U6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY2" gate="G$1" pin="-UB"/>
-<wire x1="200.66" y1="35.56" x2="195.58" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="35.56" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="35.56" x2="187.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="35.56" x2="187.96" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="33.02" x2="187.96" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="33.02" x2="187.96" y2="33.02" width="0.1524" layer="91"/>
+<junction x="187.96" y="33.02"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="2"/>
@@ -23351,6 +23557,12 @@ ESP8266 module</description>
 <wire x1="195.58" y1="152.4" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="RELAY0" gate="G$1" pin="SWOPEN"/>
 <wire x1="195.58" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="127" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="134.62" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="142.24" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
+<junction x="195.58" y="152.4"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -23382,14 +23594,14 @@ ESP8266 module</description>
 </net>
 <net name="TEMP" class="0">
 <segment>
-<wire x1="71.12" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="88.9" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="73.66" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="81.28" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="91.44" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<junction x="66.04" y="88.9"/>
+<wire x1="60.96" y1="91.44" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
+<junction x="60.96" y="88.9"/>
 <label x="53.34" y="88.9" size="1.778" layer="95"/>
-<wire x1="66.04" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <junction x="71.12" y="88.9"/>
@@ -23486,8 +23698,17 @@ ESP8266 module</description>
 <net name="SDA/DHT" class="0">
 <segment>
 <pinref part="U15" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <label x="53.34" y="66.04" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="DAT"/>
+<wire x1="71.12" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="33.02" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<junction x="71.12" y="66.04"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="71.12" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<junction x="66.04" y="66.04"/>
 </segment>
 <segment>
 <pinref part="WEMOS1" gate="D1" pin="D4"/>
